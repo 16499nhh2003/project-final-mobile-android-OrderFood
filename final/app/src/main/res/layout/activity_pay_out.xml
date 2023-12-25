@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/trans"
+        android:src="@drawable/arrowleft"
+        android:text="Button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit"
+        android:fontFamily="@font/yeonsung"
+        android:textColor="@color/gren_lite1"
+        android:textSize="32sp"
+        android:layout_marginBottom="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnBack" />
+
+    <LinearLayout
+        android:id="@+id/linearlayoutName"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/profile_edittext_shape"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearlayoutAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edit"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/yeonsung"
+            android:text="Name"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Your Name"
+            android:inputType="text" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/profile_edittext_shape"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearlayoutPhone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/yeonsung"
+            android:text="Address"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Your Address Recently form: Number of house / Name's Street / City or District"
+            android:inputType="textMultiLine" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutPhone"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/profile_edittext_shape"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearlayoutPayMethod"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/yeonsung"
+            android:text="Phone"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:hint="Your Phone"
+            android:inputType="phone" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutPayMethod"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/profile_edittext_shape"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearlayoutTotal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:text="Payment Method"
+            android:fontFamily="@font/yeonsung"
+            android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/cashondelivery1"
+            android:background="@android:color/transparent"
+            android:ems="10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearlayoutTotal"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/profile_edittext_shape"
+        android:elevation="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/btnOrder"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_weight="1"
+            android:fontFamily="@font/yeonsung"
+            android:text="Total Amount"
+            android:textSize="20dp" />
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:ems="10"
+            android:gravity="end"
+            android:paddingEnd="32dp"
+            android:text="$10"
+            android:textColor="@color/gren_lite1" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnOrder"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:elevation="10dp"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:text="Place My Order"
+        android:textColor="@color/gren_lite2"
+        android:textSize="20sp"
+        android:textAllCaps="false"
+        android:background="@drawable/profile_edittext_shape"
+        android:fontFamily="@font/yeonsung"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

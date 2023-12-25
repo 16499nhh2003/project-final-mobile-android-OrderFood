@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/orderDetailsTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Details:"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/customerNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderDetailsTextView"
+        android:layout_marginTop="8dp"
+        android:text="Customer Name: John Doe" />
+
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/customerNameTextView"
+        android:layout_marginTop="8dp"
+        android:text="Phone: +123456789" />
+
+    <TextView
+        android:id="@+id/addressTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/phoneTextView"
+        android:layout_marginTop="8dp"
+        android:text="Address: 123 Main St" />
+
+    <TextView
+        android:id="@+id/totalTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addressTextView"
+        android:layout_marginTop="8dp"
+        android:text="Total: $100.00" />
+
+    <TextView
+        android:id="@+id/paymentMethodTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/totalTextView"
+        android:layout_marginTop="8dp"
+        android:text="Payment Method: Credit Card" />
+
+    <TextView
+        android:id="@+id/orderStatusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/paymentMethodTextView"
+        android:layout_marginTop="6dp"
+        android:text="Order Status: Delivered" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderStatusTextView"
+        android:layout_marginTop="6dp"
+        android:text="sada" />
+
+    <Button
+        android:id="@+id/viewDetailsButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/date"
+        android:layout_marginTop="16dp"
+        android:text="View Details" />
+
+</RelativeLayout>

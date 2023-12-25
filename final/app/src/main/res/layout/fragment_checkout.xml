@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- activity_checkout.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewOrderSummary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Order Summary"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Add other UI elements such as text views, edit text fields, buttons, etc. -->
+
+    <!-- Example: Customer Name -->
+    <TextView
+        android:id="@+id/textViewCustomerNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Name"
+        android:layout_below="@id/textViewOrderSummary"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCustomerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your name"
+        android:inputType="textPersonName"
+        android:layout_below="@id/textViewCustomerNameLabel"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Example: Customer Address -->
+    <TextView
+        android:id="@+id/textViewCustomerAddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delivery Address"
+        android:layout_below="@id/editTextCustomerName"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCustomerAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your address"
+        android:inputType="textPostalAddress"
+        android:layout_below="@id/textViewCustomerAddressLabel"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Example: Customer Phone  -->
+    <TextView
+        android:id="@+id/textViewCustomerPhoneLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Customer Phone"
+        android:layout_below="@id/editTextCustomerAddress"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextCustomerPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your phone"
+        android:inputType="textPostalAddress"
+        android:layout_below="@id/textViewCustomerPhoneLabel"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Add more UI elements as needed -->
+
+    <!-- Example: Checkout Button -->
+    <Button
+        android:id="@+id/buttonCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Checkout"
+        android:layout_below="@id/editTextCustomerPhone"
+        android:layout_marginTop="16dp"/>
+
+</RelativeLayout>

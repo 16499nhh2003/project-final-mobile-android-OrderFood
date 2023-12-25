@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/imageCartEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/cartempty"
+        android:visibility="gone" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rcvCart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnCheckOut" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rcvCart"
+        android:layout_marginLeft="10dp"
+        android:text="Total"
+        android:textSize="20sp" />
+
+
+    <TextView
+        android:id="@+id/totalPriceordercart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rcvCart"
+        android:layout_marginRight="10dp"
+        android:gravity="right"
+        android:text="$0"
+        android:textSize="20sp" />
+
+
+    <Button
+        android:id="@+id/btnCheckOut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="60dp"
+        android:text="Check Out" />
+
+
+</RelativeLayout>

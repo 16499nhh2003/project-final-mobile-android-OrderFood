@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/viewDetail"
+        android:title="Xem chi tiết người dùng" />
+    <item
+        android:id="@+id/userEdit"
+        android:title="Chỉnh sửa thông tin" />
+
+    <item
+        android:id="@+id/userDelete"
+        android:title="Xóa người dùng" />
+
+    <item
+        android:id="@+id/viewHistory"
+        android:title="Xem lịch sử mua hàng" />
+</menu>

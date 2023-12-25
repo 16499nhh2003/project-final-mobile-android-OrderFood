@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Notification"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/notification1"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/sademoji"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your order has been Canceled Successfully File"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/notification2"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/icon_1"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order has been taken by the driver"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/notification3"
+        android:background="?android:attr/selectableItemBackground"
+        android:padding="8dp"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/illustration"
+            android:layout_margin="8dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Congrats Your Order Placed To Google Drive"
+            android:layout_gravity="center_vertical"
+            android:padding="8dp"/>
+
+    </LinearLayout>
+</LinearLayout>
