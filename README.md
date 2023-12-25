@@ -13,7 +13,7 @@ Before running the application, make sure you have the following:
 ## Installation
 
 # Clone the repository
-git clone https://github.com/your-username/firebase-user-management-api.git
+[git clone https://github.com/your-username/firebase-user-management-api.git](https://github.com/huyhoait203/project-final-mobile-android.git)
 
 # Navigate to the project directory
 cd server
